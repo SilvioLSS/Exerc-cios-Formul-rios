@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios formulários 1</title>
+</head>
+<body>
+    <header>
+        <h1>Avaliação</h1>
+    </header>
+    <br>
+    <main>  
+        <section>
+            <form method="post">
+                <fieldset>
+                    <legend>Informações pessoais</legend>
+                    <label>Nome do usuário: </label>
+                    <input type="text" name="nome" id="nome">
+                    <br><br>
+                    <label">Gênero: </label>
+                    <select name="genero" id="genero">
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+        </form>
+        </section>
+        <section>
+            <form method="post">
+                <label>Selecione o seu país de origem: </label>
+                <select name="pais" id="pais">
+                    <optgroup label="América">
+                        <option value="br">Brasil</option>
+                        <option value="eua">Estados Unidos</option>
+                        <option value="Can">Canadá</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="ger">Alemanha</option>
+                    </optgroup>
+                    <optgroup label="Ásia">
+                        <option value="jap">Japão</option>
+                    </optgroup>
+                </select>
+            </form>
+        </section> 
+        <br><br>
+        <section>
+            <label">Comentários ou feedback: </label>
+            <br>
+            <textarea name="coment" id="coment" cols="100" rows="15"></textarea>
+            <br>
+            <label>Avaliação: </label>
+            <input type="number" name="num" id="num" min="1" max="100" step="5">
+            <br>
+            <label">Data: </label>
+            <input type="date">
+        </section>
+    </main>
+</body>
+</html>
